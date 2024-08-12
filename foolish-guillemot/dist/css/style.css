@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    height: 100vh;
+}
+.output {
+    flex: 1;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+}
+.input {
+    flex: 0 1 30%;
+    min-width: 300px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+#submit {
+    width: 100%;
+    margin-top: 10px;
+}
+
+#config {
+    /* width: 100%;
+    height: 100%;
+    resize: both; */
+    flex: 1; /* Allow textarea to grow and fill the remaining space */
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: both; /* Allow resizing in both directions */
+}
+
+#submit textbox {
+    width: 100%;
+}
+
+.CodeMirror {
+    max-height: 100%;
+}
+
+.CodeMirror-scroll {
+    max-height: 100%;
+}
+
+#editor {
+    max-height: 100%;
+}
+
+#desc {
+    padding: 5px;
+}
+
+#err_msg {
+    padding: 2px;
+}
+
+p {
+    font-family: monospace;
+}

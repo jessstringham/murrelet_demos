@@ -1,0 +1,34 @@
+{
+  "name": "foolish-guillemot",
+  "version": "0.0.1",
+  "description": "frontend for murrelet",
+  "main": "index.js",
+  "scripts": {
+    "package_rust": "sh package_rust.sh",
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessstringham/murrelet_demos"
+  },
+  "author": "Jessica Stringham",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jessstringham/murrelet_demos/issues"
+  },
+  "homepage": "https://github.com/jessstringham/murrelet_demos#readme",
+  "dependencies": {
+    "@codemirror/lang-yaml": "^6.1.1",
+    "@codemirror/view": "^6.28.4",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "codemirror": "^6.0.1",
+    "foolish-guillemot": "file:../murrelet/examples/foolish-guillemot/pkg",
+    "rollup": "^4.18.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  }
+}

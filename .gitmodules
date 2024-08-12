@@ -1,0 +1,3 @@
+[submodule "murrelet"]
+	path = murrelet
+	url = https://github.com/jessstringham/murrelet.git

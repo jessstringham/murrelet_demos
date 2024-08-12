@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foolish Guillemot</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="output">
+            <svg width="100%" height="100%" id="frame">
+                <defs id="imgDefs"></defs>
+                <defs id="patternDefs"></defs>
+                <g id="paths"></g>
+            </svg>
+        </div>
+
+        <div class="input">
+            <div id="err_msg"></div>
+        <button id="submit" color="red">Submit</button>
+        <div id="editor"></div>
+        <script src="./bundle.js" type="module"></script>
+    </div>
+
+</div>
+
+<div id="desc">
+<pre>
+# Some global variables
+# = UnitCell =
+# (these only work under "node")
+#  - x, y:     unitcell coordinates scaled between 0 and 1. 
+#              useful when combined with scale, as in s(x, 0.3, 0.5)
+#  - x_i, y_i: unitcell coordinates as integers (useful for mod)
+#  - seed:   a "random" seed for the cell. can be useful for rn(seed, 3)
+#
+# = Global =
+# == Time ==
+#  - t:       time in seconds
+#  - tease:   a bouncing thing between 0 and 1. can be useful with scale.
+#  - stease:  like tease but slow
+#
+# == App ==
+#  - mx, my:  mouse position
+#  - cx, cy:  last click position
+#  - w, h:    drawing window dimensions
+#  - click:   is currently clicking
+#
+# == Functions ==
+# this includes all of the functions from https://github.com/ISibboI/evalexpr?tab=readme-ov-file#builtin-functions
+# and some bonus ones
+#  - clamp(x, 0, 1)
+#
+# Some gotchas:
+# - you're either writing in YAML or in evalexpr. This leads to a few (non-ideal) things:
+#   - YAML uses # for comments and evalexpr uses //
+#   - a mistake at the YAML will give you a nice message, while in evalexpr it'll silently fail
+#
+#
+# This is a rough draft of a demo, so might disappear or change at any time!
+</pre>
+</div>
+<footer>
+    <p>&copy; 2024 Jessica Stringham.</p>
+</footer>
+</body>
+</html>
